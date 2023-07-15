@@ -1,0 +1,49 @@
+
+
+.digit,.oper,#display,#equal{
+font-size: 40px;
+}
+
+#calculator{
+    display: grid;
+    grid-template-rows: repeat(1fr,5);
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+.oper{
+    grid-column: 4/span 1;
+    background-color: brown;
+}
+.third{
+    grid-row: 2/span 1;
+}
+.second{
+    grid-row: 3/span 1;
+}
+.first{
+    grid-row: 4/span 1;
+}
+.zero{
+    grid-row: 5/span 1;
+}
+#display{
+    grid-row: 1/span 1;
+    grid-column: 1/span 4;
+    background-color: aqua;
+    overflow: hidden;
+    padding-right: 2em;
+}
+#clear{
+    grid-column: 4;
+    grid-row: 1;
+}
+#equal{
+    order: 3;
+    grid-column: 3/span 1;
+    background-color:slategray
+}
+.digit{
+    background-color: dodgerblue;
+}
